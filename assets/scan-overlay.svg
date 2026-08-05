@@ -1,74 +1,320 @@
-<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <!-- Scan line core: bright neon green, edge-feathered -->
-    <linearGradient id="slCore" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#00FF41" stop-opacity="0"/>
-      <stop offset="6%"   stop-color="#00FF41" stop-opacity="0.7"/>
-      <stop offset="50%"  stop-color="#39FF14" stop-opacity="1"/>
-      <stop offset="94%"  stop-color="#00FF41" stop-opacity="0.7"/>
-      <stop offset="100%" stop-color="#00FF41" stop-opacity="0"/>
-    </linearGradient>
+<svg fill="none" viewBox="0 0 900 4400" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        /* ═══════════════════════════════════════════════
+           ROOT + RESET
+           ═══════════════════════════════════════════════ */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    <!-- Glow halo above & below the line -->
-    <linearGradient id="slGlow" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#00FF41" stop-opacity="0"/>
-      <stop offset="35%"  stop-color="#00FF41" stop-opacity="0.12"/>
-      <stop offset="50%"  stop-color="#39FF14" stop-opacity="0.25"/>
-      <stop offset="65%"  stop-color="#00FF41" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#00FF41" stop-opacity="0"/>
-    </linearGradient>
+        .page {
+          position: relative;
+          width: 100%;
+          min-height: 4400px;
+          background: transparent;
+          overflow: hidden;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+          color: #E5E7EB;
+          line-height: 1.6;
+        }
 
-    <!-- Trailing afterglow tint (fills area above the line as it descends) -->
-    <linearGradient id="trailGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#00FF41" stop-opacity="0"/>
-      <stop offset="85%"  stop-color="#00FF41" stop-opacity="0.03"/>
-      <stop offset="100%" stop-color="#00FF41" stop-opacity="0.08"/>
-    </linearGradient>
-  </defs>
+        /* ═══════════════════════════════════════════════
+           SCAN LINE + GLOW  (overlays ALL content)
+           ═══════════════════════════════════════════════ */
+        .scan-line {
+          position: absolute;
+          top: 0; left: 0;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(0,255,65,0.4) 6%,
+            rgba(57,255,20,1) 50%,
+            rgba(0,255,65,0.4) 94%,
+            transparent 100%
+          );
+          box-shadow:
+            0 0 6px  rgba(0,255,65,0.9),
+            0 0 15px rgba(0,255,65,0.6),
+            0 0 40px rgba(0,255,65,0.3),
+            0 0 80px rgba(0,255,65,0.12);
+          z-index: 9999;
+          pointer-events: none;
+          animation: sweep 8s linear infinite;
+        }
 
-  <!-- The entire SVG is transparent by default — only the scan elements are visible -->
+        .scan-glow {
+          position: absolute;
+          top: 0; left: 0;
+          width: 100%;
+          height: 80px;
+          background: linear-gradient(
+            180deg,
+            transparent 0%,
+            rgba(0,255,65,0.06) 30%,
+            rgba(0,255,65,0.10) 50%,
+            rgba(0,255,65,0.06) 70%,
+            transparent 100%
+          );
+          z-index: 9998;
+          pointer-events: none;
+          animation: sweep 8s linear infinite;
+        }
 
-  <!-- Trailing green tint rectangle (grows with the scan line) -->
-  <rect x="0" y="0" width="900" height="2" fill="url(#trailGrad)">
-    <animate attributeName="height"
-      values="0;300;0" dur="4s"
-      repeatCount="indefinite"
-      calcMode="linear"/>
-    <animate attributeName="opacity"
-      values="0;0.6;0" dur="4s"
-      repeatCount="indefinite"/>
-  </rect>
+        /* trailing tint — grows from top as line descends */
+        .scan-trail {
+          position: absolute;
+          top: 0; left: 0;
+          width: 100%;
+          height: 0;
+          background: linear-gradient(
+            180deg,
+            transparent 0%,
+            rgba(0,255,65,0.008) 60%,
+            rgba(0,255,65,0.025) 100%
+          );
+          z-index: 9997;
+          pointer-events: none;
+          animation: trail 8s linear infinite;
+        }
 
-  <!-- Soft wide glow band (40px tall) -->
-  <rect x="0" y="0" width="900" height="40" fill="url(#slGlow)">
-    <animate attributeName="y"
-      values="-40;300" dur="4s"
-      repeatCount="indefinite"
-      calcMode="linear"/>
-  </rect>
+        @keyframes sweep {
+          0%   { transform: translateY(-80px); }
+          100% { transform: translateY(4400px); }
+        }
 
-  <!-- Bright core scanline (2px) -->
-  <rect x="0" y="0" width="900" height="2" fill="url(#slCore)">
-    <animate attributeName="y"
-      values="-2;300" dur="4s"
-      repeatCount="indefinite"
-      calcMode="linear"/>
-  </rect>
+        @keyframes trail {
+          0%   { height: 0; }
+          92%  { height: 4400px; }
+          100% { height: 0; }
+        }
 
-  <!-- Edge sparkle particles travelling with the line -->
-  <circle r="2" fill="#39FF14" opacity="0.8">
-    <animate attributeName="cy" values="-2;300" dur="4s" repeatCount="indefinite" calcMode="linear"/>
-    <animate attributeName="cx" values="80;120;80" dur="1.2s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.3;1;0.3" dur="0.8s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="1.5" fill="#00FF41" opacity="0.6">
-    <animate attributeName="cy" values="-2;300" dur="4s" repeatCount="indefinite" calcMode="linear"/>
-    <animate attributeName="cx" values="820;790;820" dur="1.5s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.2;0.9;0.2" dur="0.6s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="1.8" fill="#39FF14" opacity="0.7">
-    <animate attributeName="cy" values="-2;300" dur="4s" repeatCount="indefinite" calcMode="linear"/>
-    <animate attributeName="cx" values="450;470;450" dur="1s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.4;1;0.4" dur="0.7s" repeatCount="indefinite"/>
-  </circle>
+        /* ═══════════════════════════════════════════════
+           CONTENT STYLES — mirrors the existing README
+           ═══════════════════════════════════════════════ */
+        .content {
+          position: relative;
+          z-index: 1;
+          padding: 0;
+        }
+
+        .center { text-align: center; }
+
+        h2 {
+          font-size: 22px;
+          font-weight: 600;
+          border-bottom: 1px solid #30363d;
+          padding-bottom: 8px;
+          margin: 30px 0 16px 0;
+          color: #E5E7EB;
+        }
+
+        h3 {
+          font-size: 17px;
+          font-weight: 600;
+          margin: 16px 0 8px 0;
+          color: #E5E7EB;
+        }
+
+        h3 a {
+          color: #A78BFA;
+          text-decoration: none;
+        }
+        h3 a:hover {
+          text-decoration: underline;
+        }
+
+        p, li {
+          font-size: 14px;
+          color: #c9d1d9;
+          margin: 8px 0;
+        }
+
+        a {
+          color: #A78BFA;
+          text-decoration: none;
+        }
+
+        code {
+          background: rgba(110,118,129,0.2);
+          border-radius: 4px;
+          padding: 2px 6px;
+          font-family: 'JetBrains Mono','Fira Code',ui-monospace,monospace;
+          font-size: 12px;
+          color: #c9d1d9;
+        }
+
+        strong { color: #E5E7EB; }
+
+        ul {
+          padding-left: 24px;
+          margin: 8px 0;
+        }
+
+        .badges img {
+          margin: 2px 4px;
+          height: 28px;
+          vertical-align: middle;
+        }
+
+        .project-table {
+          width: 100%;
+          border-collapse: collapse;
+          margin: 16px 0;
+        }
+        .project-table td {
+          width: 50%;
+          vertical-align: top;
+          padding: 16px 20px;
+          border: 1px solid #30363d;
+        }
+
+        .stats-row {
+          text-align: center;
+          margin: 12px 0;
+        }
+        .stats-row img {
+          max-width: 95%;
+          margin: 6px auto;
+          display: block;
+        }
+
+        .footer-badge img {
+          height: 28px;
+          vertical-align: middle;
+        }
+
+        .spacer { height: 20px; }
+        .spacer-sm { height: 12px; }
+
+        .ott-callout {
+          text-align: center;
+          margin: 20px 0;
+          font-size: 14px;
+        }
+      </style>
+
+      <div class="page">
+        <!-- ═══ SCAN LINE OVERLAY ═══ -->
+        <div class="scan-trail"></div>
+        <div class="scan-glow"></div>
+        <div class="scan-line"></div>
+
+        <!-- ═══ ACTUAL CONTENT ═══ -->
+        <div class="content">
+
+          <!-- BADGES -->
+          <div class="center badges" style="margin-top: 12px;">
+            <img src="https://img.shields.io/badge/focus-AI_agents_·_systems_·_web-06B6D4?style=for-the-badge&amp;labelColor=0B1020" alt="focus"/>
+            <img src="https://img.shields.io/badge/mode-dark_only-5B21B6?style=for-the-badge&amp;labelColor=0B1020" alt="mode"/>
+            <img src="https://img.shields.io/badge/philosophy-docs_before_code-E5E7EB?style=for-the-badge&amp;labelColor=0B1020" alt="philosophy"/>
+          </div>
+
+          <div class="spacer"></div>
+
+          <!-- WHAT THIS PROFILE IS -->
+          <h2>What this profile actually is</h2>
+          <p>Most of what's public here is coursework — a long tail of small class exercises. This README isn't about that tail. It's about the handful of repos where I decided a weekend project should behave like a real product: hackathon platforms with real architecture diagrams, a Linux distro built from a documentation spec instead of vibes, and a personal AI stack that's been through seven versions.</p>
+          <p>If a project below doesn't have a live badge, it's because it's a prototype and I'd rather say that than fake a demo link.</p>
+
+          <div class="spacer"></div>
+
+          <!-- FLAGSHIP BUILDS -->
+          <h2>Flagship builds</h2>
+
+          <table class="project-table">
+            <tr>
+              <td>
+                <h3>🛡️ <a href="https://github.com/HardikBhaskar2010/AEGIS-Decision-Intelligence-Platform">AEGIS — Decision Intelligence Platform</a></h3>
+                <p>Built for <strong>Google Cloud's Gen AI Academy (APAC)</strong> hackathon with Hack2Skill. Turns fragmented city-ops data (transit, weather, utilities, citizen feedback) into an explainable, cited "Situation Brief" instead of five open dashboards.</p>
+                <p>A 5-agent graph (Orchestrator → Query → Correlation → Forecast → Narrative) runs on <strong>ADK 2.0</strong> over <strong>BigQuery</strong>, streamed live to a <strong>React Flow</strong> agent-graph visualization so you can watch the reasoning happen, not just the output.</p>
+                <p><code>React · FastAPI · BigQuery · Firestore · Gemini 3 · MapLibre</code></p>
+              </td>
+              <td>
+                <h3>🧠 <a href="https://github.com/HardikBhaskar2010/SMRITI-Smart-Maintenance-Retrieval-Intelligence-">SMRITI — Knowledge Debt Intelligence</a></h3>
+                <p>Selected for <strong>Phase 2</strong> of the Economic Times AI Hackathon. Industrial plants lose decades of unwritten technician knowledge when experts leave — SMRITI quantifies that loss as a score, forecasts which assets go critical, and flags experts at flight risk before they walk out the door.</p>
+                <p>Phase 2 added streaming Gemini 2.0 Flash responses, JWT role-based auth, and a React-Three-Fiber 3D knowledge graph on top of the original RAG core.</p>
+                <p><code>FastAPI · React · Gemini · WebSockets · R3F</code></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3>🌙 <a href="https://github.com/HardikBhaskar2010/MahinaOS">MahinaOS</a></h3>
+                <p>Not a themed Linux install — an actual from-scratch OS: custom PID-1 init (luna-init, TOML service graphs, cycle detection), a malloc-free boot splash writing directly to the framebuffer, a custom display protocol (<strong>LGP</strong>), and a native C17 GUI toolkit. All of it written <em>after</em> the architecture was documented, not before.</p>
+                <p>Currently in Phase 3 — compositor, shell, and ten desktop apps running under QEMU.</p>
+                <p><code>C17 · Linux kernel · Limine · Makefile/QEMU</code></p>
+              </td>
+              <td>
+                <h3>🤖 <a href="https://github.com/HardikBhaskar2010/Veronica-v7-main">Veronica — Sovereign AI</a></h3>
+                <p>A private AI that isn't a chat wrapper: system-level perception (active window, clipboard, cursor focus on Windows), Whisper speech-to-text, BLIP vision, and a persistent memory graph that maps real contacts across WhatsApp and email. Hybrid brain — local via Ollama, or scales out to Gemini/Claude for harder reasoning.</p>
+                <p>Now at <strong>v7.2</strong>, seven iterations deep on the same long-term thesis.</p>
+                <p><code>FastAPI · Ollama · Gemini/Claude API · Whisper · BLIP</code></p>
+              </td>
+            </tr>
+          </table>
+
+          <div class="ott-callout">
+            <strong>🎬 <a href="https://github.com/HardikBhaskar2010/OTT">Sunad OTT</a></strong> — a bilingual (Hindi/English) streaming platform for Indian civilizational storytelling. Next.js 14 frontend on Vercel's edge network, a separate Express/TypeScript API on Render, Firebase auth + Firestore, Razorpay webhooks — a real split-service architecture, not a single monorepo demo.
+          </div>
+
+          <div class="spacer"></div>
+
+          <!-- HOW I WORK -->
+          <h2>How I actually work</h2>
+          <ul>
+            <li><strong>Documentation before code.</strong> MahinaOS has a six-volume internal spec (the "Divine Collection of Knowledge") that the code has to satisfy — if it's not written down first, it doesn't get built.</li>
+            <li><strong>Architecture diagrams aren't decoration.</strong> AEGIS ships with real Mermaid sequence diagrams and an ERD because I use them to think, not just to explain afterward.</li>
+            <li><strong>I say when something's a prototype.</strong> AEGIS's own README leads with a warning that it runs on mock data. I'd rather be accurate than impressive.</li>
+            <li><strong>Iterate in public version numbers.</strong> Veronica is on v7, SMRITI has a documented Phase 1 → Phase 2 upgrade table. Nothing here is a one-shot.</li>
+          </ul>
+
+          <div class="spacer"></div>
+
+          <!-- STACK -->
+          <h2>Stack</h2>
+          <div class="center">
+            <img src="https://skillicons.dev/icons?i=c,cpp,python,ts,js,react,nextjs,vite,tailwind,fastapi,nodejs,express,docker,linux,git,figma&amp;theme=dark" alt="stack" style="max-width:95%;"/>
+          </div>
+
+          <div class="spacer"></div>
+
+          <!-- CURRENTLY BUILDING -->
+          <h2>Currently building</h2>
+          <ul>
+            <li>Pushing <strong>MahinaOS</strong> through Phase 3 — shell polish and the local AI daemon</li>
+            <li>Extending <strong>Veronica's</strong> omni-connector layer</li>
+            <li>Applied to <strong>PRAYAAS</strong> (NCERT's national research grant) with an education-technology proposal</li>
+          </ul>
+
+          <div class="spacer"></div>
+
+          <!-- STATS -->
+          <h2>Stats</h2>
+          <div class="stats-row">
+            <img src="https://github-readme-stats-luna.vercel.app/api?username=HardikBhaskar2010&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;count_private=true&amp;bg_color=0B1020&amp;title_color=A78BFA&amp;icon_color=06B6D4" alt="stats" style="height:165px;"/>
+          </div>
+          <div class="stats-row">
+            <img src="https://github-readme-streak-stats-eight.vercel.app?user=HardikBhaskar2010&amp;theme=tokyonight&amp;hide_border=true&amp;background=0B1020&amp;ring=A78BFA&amp;fire=06B6D4" alt="streak"/>
+          </div>
+          <div class="stats-row">
+            <img src="https://raw.githubusercontent.com/HardikBhaskar2010/HardikBhaskar2010/output/github-contribution-grid-snake-dark.svg" alt="snake"/>
+          </div>
+
+          <div class="spacer"></div>
+
+          <!-- REACH OUT -->
+          <h2>Reach out</h2>
+          <div class="center footer-badge">
+            <a href="https://github.com/HardikBhaskar2010">
+              <img src="https://img.shields.io/badge/GitHub-HardikBhaskar2010-0B1020?style=for-the-badge&amp;logo=github&amp;logoColor=A78BFA" alt="github"/>
+            </a>
+          </div>
+
+          <div class="spacer"></div>
+
+        </div><!-- /content -->
+      </div><!-- /page -->
+    </div>
+  </foreignObject>
 </svg>
