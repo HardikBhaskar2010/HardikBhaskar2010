@@ -1,30 +1,51 @@
-<svg width="900" height="90" viewBox="0 0 900 90" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="80" viewBox="0 0 900 80" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="fbgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0B1020"/>
-      <stop offset="50%" stop-color="#160E2E"/>
-      <stop offset="100%" stop-color="#0B1020"/>
-    </linearGradient>
-    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7C3AED"/>
-      <stop offset="50%" stop-color="#06B6D4"/>
-      <stop offset="100%" stop-color="#7C3AED"/>
-    </linearGradient>
-    <clipPath id="froundedFooter">
-      <rect x="0" y="0" width="900" height="90" rx="14"/>
+    <clipPath id="fclip">
+      <rect width="900" height="80" rx="10"/>
     </clipPath>
   </defs>
-  <g clip-path="url(#froundedFooter)">
-    <rect width="900" height="90" fill="url(#fbgGrad)"/>
-    <path d="M0,55 C150,25 300,80 450,50 S750,20 900,50 L900,90 L0,90 Z" fill="url(#waveGrad)" opacity="0.18">
-      <animate attributeName="d"
-        values="M0,55 C150,25 300,80 450,50 S750,20 900,50 L900,90 L0,90 Z;
-                 M0,50 C150,80 300,20 450,55 S750,60 900,30 L900,90 L0,90 Z;
-                 M0,55 C150,25 300,80 450,50 S750,20 900,50 L900,90 L0,90 Z"
-        dur="10s" repeatCount="indefinite"/>
-    </path>
-    <text x="450" y="42" text-anchor="middle" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#6B7280" letter-spacing="1.5">
+
+  <g clip-path="url(#fclip)">
+    <!-- background -->
+    <rect width="900" height="80" fill="#0B1020"/>
+
+    <!-- outer frame -->
+    <rect x="3" y="3" width="894" height="74" rx="8" fill="none" stroke="#E84545" stroke-width="2"/>
+    <!-- inner frame -->
+    <rect x="8" y="8" width="884" height="64" rx="5" fill="none" stroke="#E84545" stroke-opacity="0.25" stroke-width="1"/>
+
+    <!-- decorative pixel diamonds — left side -->
+    <g transform="translate(30,30)" fill="#FCD34D" opacity="0.7">
+      <rect x="4" y="0" width="4" height="4"/><rect x="0" y="4" width="4" height="4"/>
+      <rect x="8" y="4" width="4" height="4"/><rect x="4" y="8" width="4" height="4"/>
+    </g>
+    <g transform="translate(60,34)" fill="#E84545" opacity="0.5">
+      <rect x="2" y="0" width="3" height="3"/><rect x="0" y="3" width="3" height="3"/>
+      <rect x="4" y="3" width="3" height="3"/><rect x="2" y="6" width="3" height="3"/>
+    </g>
+
+    <!-- motto — serif, elegant contrast to header -->
+    <text x="450" y="38" text-anchor="middle"
+          font-family="'Georgia','Palatino Linotype','Times New Roman',serif"
+          font-size="14" font-style="italic" fill="#9CA3AF" letter-spacing="1">
       build it clean · build it bold · build it alive
     </text>
+
+    <!-- label — monospace small -->
+    <text x="450" y="58" text-anchor="middle"
+          font-family="'Courier New','Lucida Console',monospace"
+          font-size="10" fill="#4B5563" letter-spacing="3">
+      HARDIK BHASKAR · 2025
+    </text>
+
+    <!-- decorative pixel diamonds — right side -->
+    <g transform="translate(840,34)" fill="#E84545" opacity="0.5">
+      <rect x="2" y="0" width="3" height="3"/><rect x="0" y="3" width="3" height="3"/>
+      <rect x="4" y="3" width="3" height="3"/><rect x="2" y="6" width="3" height="3"/>
+    </g>
+    <g transform="translate(858,30)" fill="#FCD34D" opacity="0.7">
+      <rect x="4" y="0" width="4" height="4"/><rect x="0" y="4" width="4" height="4"/>
+      <rect x="8" y="4" width="4" height="4"/><rect x="4" y="8" width="4" height="4"/>
+    </g>
   </g>
 </svg>

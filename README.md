@@ -6,9 +6,9 @@
 
 <br/>
 
-<img src="https://img.shields.io/badge/focus-AI_agents_·_systems_·_web-06B6D4?style=for-the-badge&labelColor=0B1020"/>
-<img src="https://img.shields.io/badge/mode-dark_only-5B21B6?style=for-the-badge&labelColor=0B1020"/>
-<img src="https://img.shields.io/badge/philosophy-docs_before_code-E5E7EB?style=for-the-badge&labelColor=0B1020"/>
+<img src="https://img.shields.io/badge/focus-AI_agents_·_systems_·_web-E84545?style=for-the-badge&labelColor=0B1020"/>
+<img src="https://img.shields.io/badge/mode-dark_only-FF6B35?style=for-the-badge&labelColor=0B1020"/>
+<img src="https://img.shields.io/badge/philosophy-docs_before_code-FCD34D?style=for-the-badge&labelColor=0B1020"/>
 
 </div>
 
@@ -125,11 +125,11 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 <!-- SELF-HOSTED: replace YOUR-STATS-APP below with your own Vercel deployment — see SETUP.md. The shared public instance (github-readme-stats.vercel.app) is frequently paused/rate-limited and will show a broken image. (Top-langs isn't duplicated here — that's what the byte-weighted chart above already covers, more honestly.) -->
 
 <div align="center">
-<img height="165" src="https://github-readme-stats-luna.vercel.app/api?username=HardikBhaskar2010&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0B1020&title_color=A78BFA&icon_color=06B6D4" alt="stats"/>
+<img height="165" src="https://github-readme-stats-luna.vercel.app/api?username=HardikBhaskar2010&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0B1020&title_color=E84545&icon_color=FF6B35" alt="stats"/>
 </div>
 
 <div align="center">
-<img src="https://github-readme-streak-stats-eight.vercel.app?user=HardikBhaskar2010&theme=tokyonight&hide_border=true&background=0B1020&ring=A78BFA&fire=06B6D4" alt="streak"/>
+<img src="https://github-readme-streak-stats-eight.vercel.app?user=HardikBhaskar2010&theme=tokyonight&hide_border=true&background=0B1020&ring=E84545&fire=FF6B35" alt="streak"/>
 </div>
 
 <div align="center">
@@ -143,7 +143,7 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 <div align="center">
 
 <a href="https://github.com/HardikBhaskar2010">
-<img src="https://img.shields.io/badge/GitHub-HardikBhaskar2010-0B1020?style=for-the-badge&logo=github&logoColor=A78BFA"/>
+<img src="https://img.shields.io/badge/GitHub-HardikBhaskar2010-0B1020?style=for-the-badge&logo=github&logoColor=E84545"/>
 </a>
 
 </div>
