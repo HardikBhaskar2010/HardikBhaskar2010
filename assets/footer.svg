@@ -1,0 +1,30 @@
+<svg width="900" height="90" viewBox="0 0 900 90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fbgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0B1020"/>
+      <stop offset="50%" stop-color="#160E2E"/>
+      <stop offset="100%" stop-color="#0B1020"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="50%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <clipPath id="froundedFooter">
+      <rect x="0" y="0" width="900" height="90" rx="14"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#froundedFooter)">
+    <rect width="900" height="90" fill="url(#fbgGrad)"/>
+    <path d="M0,55 C150,25 300,80 450,50 S750,20 900,50 L900,90 L0,90 Z" fill="url(#waveGrad)" opacity="0.18">
+      <animate attributeName="d"
+        values="M0,55 C150,25 300,80 450,50 S750,20 900,50 L900,90 L0,90 Z;
+                 M0,50 C150,80 300,20 450,55 S750,60 900,30 L900,90 L0,90 Z;
+                 M0,55 C150,25 300,80 450,50 S750,20 900,50 L900,90 L0,90 Z"
+        dur="10s" repeatCount="indefinite"/>
+    </path>
+    <text x="450" y="42" text-anchor="middle" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#6B7280" letter-spacing="1.5">
+      build it clean · build it bold · build it alive
+    </text>
+  </g>
+</svg>

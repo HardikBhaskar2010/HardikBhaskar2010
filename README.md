@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1020,50:5B21B6,100:06B6D4&height=210&section=header&text=Hey,%20I'm%20Luna&fontSize=46&fontColor=E5E7EB&fontAlignY=42&desc=I%20build%20systems%20that%20are%20supposed%20to%20be%20toys%20and%20refuse%20to%20stay%20that%20way&descSize=16&descAlignY=62&animation=fadeIn" alt="header" width="100%"/>
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=2800&pause=900&color=A78BFA&center=true&vCenter=true&width=650&lines=full-stack+dev+%2B+systems+programmer;building+MahinaOS+from+the+kernel+up;shipping+multi-agent+AI+platforms;documentation-first%2C+always" alt="typing"/>
+<!-- Self-hosted, self-owned animated banner — SMIL animation baked into the SVG itself.
+     No third-party rendering service, so it can never 503 on you like the widgets below can. -->
+<img src="assets/header.svg" alt="header" width="100%"/>
 
 <br/>
 
@@ -98,8 +98,16 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 <img src="https://skillicons.dev/icons?i=c,cpp,python,ts,js,react,nextjs,vite,tailwind,fastapi,nodejs,express,docker,linux,git,figma&theme=dark" alt="stack"/>
 </div>
 
+<br/>
+
 <div align="center">
-<sub>Systems: C/C++ for kernel and OS-level work · Python/FastAPI for AI backends · TypeScript/React for everything user-facing</sub>
+
+<!-- Byte-weighted, not repo-count-weighted — otherwise ~100 small JS coursework
+     scaffolds would outrank an OS written in C. Regenerated weekly by
+     .github/workflows/update-lang-chart.yml from live GitHub API data;
+     see SETUP.md for why that distinction matters and how the automation works. -->
+<img src="assets/lang-chart.svg" alt="language breakdown by bytes"/>
+
 </div>
 
 <br/>
@@ -114,11 +122,10 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 
 ## Stats
 
-<!-- SELF-HOSTED: replace YOUR-STATS-APP and YOUR-STREAK-APP below with your own Vercel deployments — see SETUP.md. The shared public instances (github-readme-stats.vercel.app, streak-stats.demolab.com) are frequently paused/rate-limited and will show broken images. -->
+<!-- SELF-HOSTED: replace YOUR-STATS-APP below with your own Vercel deployment — see SETUP.md. The shared public instance (github-readme-stats.vercel.app) is frequently paused/rate-limited and will show a broken image. (Top-langs isn't duplicated here — that's what the byte-weighted chart above already covers, more honestly.) -->
 
 <div align="center">
-<img height="165" src="https://YOUR-STATS-APP.vercel.app/api?username=HardikBhaskar2010&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0B1020&title_color=A78BFA&icon_color=06B6D4" alt="stats"/>
-<img height="165" src="https://YOUR-STATS-APP.vercel.app/api/top-langs/?username=HardikBhaskar2010&layout=compact&theme=tokyonight&hide_border=true&bg_color=0B1020&title_color=A78BFA" alt="top langs"/>
+<img height="165" src="https://github-readme-stats-luna.vercel.app/api?username=HardikBhaskar2010&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0B1020&title_color=A78BFA&icon_color=06B6D4" alt="stats"/>
 </div>
 
 <div align="center">
@@ -141,8 +148,4 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 
 </div>
 
-<div align="center">
-<sub>Building it clean. Building it bold. Building it in the open — mostly.</sub>
-</div>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06B6D4,100:0B1020&height=100&section=footer" alt="footer" width="100%"/>
+<img src="assets/footer.svg" alt="footer" width="100%"/>

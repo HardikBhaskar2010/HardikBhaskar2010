@@ -1,0 +1,42 @@
+<svg width="640" height="264" viewBox="0 0 640 264" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="264" rx="12" fill="#0B1020"/>
+  <text x="0" y="24" font-family="'JetBrains Mono',monospace" font-size="14" fill="#6B7280" letter-spacing="1">LANGUAGES · BY BYTES, NOT REPO COUNT</text>
+  <g transform="translate(16,0)">
+    <text x="0" y="55" font-family="'JetBrains Mono',monospace" font-size="13" fill="#E5E7EB">TypeScript</text>
+    <rect x="190" y="40" width="380" height="16" rx="4" fill="#1a1a2e"/>
+    <rect x="190" y="40" width="0" height="16" rx="4" fill="#3178C6">
+      <animate attributeName="width" from="0" to="133.2" dur="0.8s" begin="0.00s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+    </rect>
+    <text x="582" y="53" font-family="'JetBrains Mono',monospace" font-size="12" fill="#A78BFA">35.1%</text>
+    <text x="0" y="89" font-family="'JetBrains Mono',monospace" font-size="13" fill="#E5E7EB">Python</text>
+    <rect x="190" y="74" width="380" height="16" rx="4" fill="#1a1a2e"/>
+    <rect x="190" y="74" width="0" height="16" rx="4" fill="#3776AB">
+      <animate attributeName="width" from="0" to="82.3" dur="0.8s" begin="0.12s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+    </rect>
+    <text x="582" y="87" font-family="'JetBrains Mono',monospace" font-size="12" fill="#A78BFA">21.6%</text>
+    <text x="0" y="123" font-family="'JetBrains Mono',monospace" font-size="13" fill="#E5E7EB">C</text>
+    <rect x="190" y="108" width="380" height="16" rx="4" fill="#1a1a2e"/>
+    <rect x="190" y="108" width="0" height="16" rx="4" fill="#A78BFA">
+      <animate attributeName="width" from="0" to="66.6" dur="0.8s" begin="0.24s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+    </rect>
+    <text x="582" y="121" font-family="'JetBrains Mono',monospace" font-size="12" fill="#A78BFA">17.5%</text>
+    <text x="0" y="157" font-family="'JetBrains Mono',monospace" font-size="13" fill="#E5E7EB">JavaScript</text>
+    <rect x="190" y="142" width="380" height="16" rx="4" fill="#1a1a2e"/>
+    <rect x="190" y="142" width="0" height="16" rx="4" fill="#F1C40F">
+      <animate attributeName="width" from="0" to="58.8" dur="0.8s" begin="0.36s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+    </rect>
+    <text x="582" y="155" font-family="'JetBrains Mono',monospace" font-size="12" fill="#A78BFA">15.5%</text>
+    <text x="0" y="191" font-family="'JetBrains Mono',monospace" font-size="13" fill="#E5E7EB">HTML</text>
+    <rect x="190" y="176" width="380" height="16" rx="4" fill="#1a1a2e"/>
+    <rect x="190" y="176" width="0" height="16" rx="4" fill="#E34F26">
+      <animate attributeName="width" from="0" to="23.5" dur="0.8s" begin="0.48s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+    </rect>
+    <text x="582" y="189" font-family="'JetBrains Mono',monospace" font-size="12" fill="#A78BFA">6.2%</text>
+    <text x="0" y="225" font-family="'JetBrains Mono',monospace" font-size="13" fill="#E5E7EB">CSS</text>
+    <rect x="190" y="210" width="380" height="16" rx="4" fill="#1a1a2e"/>
+    <rect x="190" y="210" width="0" height="16" rx="4" fill="#06B6D4">
+      <animate attributeName="width" from="0" to="15.7" dur="0.8s" begin="0.60s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+    </rect>
+    <text x="582" y="223" font-family="'JetBrains Mono',monospace" font-size="12" fill="#A78BFA">4.1%</text>
+  </g>
+</svg>
