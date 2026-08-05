@@ -1,0 +1,74 @@
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Scan line core: bright neon green, edge-feathered -->
+    <linearGradient id="slCore" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#00FF41" stop-opacity="0"/>
+      <stop offset="6%"   stop-color="#00FF41" stop-opacity="0.7"/>
+      <stop offset="50%"  stop-color="#39FF14" stop-opacity="1"/>
+      <stop offset="94%"  stop-color="#00FF41" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#00FF41" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glow halo above & below the line -->
+    <linearGradient id="slGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#00FF41" stop-opacity="0"/>
+      <stop offset="35%"  stop-color="#00FF41" stop-opacity="0.12"/>
+      <stop offset="50%"  stop-color="#39FF14" stop-opacity="0.25"/>
+      <stop offset="65%"  stop-color="#00FF41" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#00FF41" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Trailing afterglow tint (fills area above the line as it descends) -->
+    <linearGradient id="trailGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#00FF41" stop-opacity="0"/>
+      <stop offset="85%"  stop-color="#00FF41" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#00FF41" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+
+  <!-- The entire SVG is transparent by default — only the scan elements are visible -->
+
+  <!-- Trailing green tint rectangle (grows with the scan line) -->
+  <rect x="0" y="0" width="900" height="2" fill="url(#trailGrad)">
+    <animate attributeName="height"
+      values="0;300;0" dur="4s"
+      repeatCount="indefinite"
+      calcMode="linear"/>
+    <animate attributeName="opacity"
+      values="0;0.6;0" dur="4s"
+      repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Soft wide glow band (40px tall) -->
+  <rect x="0" y="0" width="900" height="40" fill="url(#slGlow)">
+    <animate attributeName="y"
+      values="-40;300" dur="4s"
+      repeatCount="indefinite"
+      calcMode="linear"/>
+  </rect>
+
+  <!-- Bright core scanline (2px) -->
+  <rect x="0" y="0" width="900" height="2" fill="url(#slCore)">
+    <animate attributeName="y"
+      values="-2;300" dur="4s"
+      repeatCount="indefinite"
+      calcMode="linear"/>
+  </rect>
+
+  <!-- Edge sparkle particles travelling with the line -->
+  <circle r="2" fill="#39FF14" opacity="0.8">
+    <animate attributeName="cy" values="-2;300" dur="4s" repeatCount="indefinite" calcMode="linear"/>
+    <animate attributeName="cx" values="80;120;80" dur="1.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="0.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="1.5" fill="#00FF41" opacity="0.6">
+    <animate attributeName="cy" values="-2;300" dur="4s" repeatCount="indefinite" calcMode="linear"/>
+    <animate attributeName="cx" values="820;790;820" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.9;0.2" dur="0.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="1.8" fill="#39FF14" opacity="0.7">
+    <animate attributeName="cy" values="-2;300" dur="4s" repeatCount="indefinite" calcMode="linear"/>
+    <animate attributeName="cx" values="450;470;450" dur="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="0.7s" repeatCount="indefinite"/>
+  </circle>
+</svg>

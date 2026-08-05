@@ -4,6 +4,9 @@
      No third-party rendering service, so it can never 503 on you like the widgets below can. -->
 <img src="assets/header.svg" alt="header" width="100%"/>
 
+<!-- 🟢 HACKER SCAN OVERLAY — Top zone -->
+<img src="assets/scan-overlay.svg" alt="" width="100%"/>
+
 <br/>
 
 <img src="https://img.shields.io/badge/focus-AI_agents_·_systems_·_web-06B6D4?style=for-the-badge&labelColor=0B1020"/>
@@ -12,7 +15,8 @@
 
 </div>
 
-<br/>
+<!-- 🟢 Green scanline divider -->
+<img src="assets/scanline.svg" alt="" width="100%"/>
 
 ## What this profile actually is
 
@@ -20,7 +24,8 @@ Most of what's public here is coursework — a long tail of small class exercise
 
 If a project below doesn't have a live badge, it's because it's a prototype and I'd rather say that than fake a demo link.
 
-<br/>
+<!-- 🟢 Green scanline divider -->
+<img src="assets/scanline.svg" alt="" width="100%"/>
 
 ## Flagship builds
 
@@ -81,7 +86,11 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 
 </div>
 
-<br/>
+<!-- 🟢 HACKER SCAN OVERLAY — Mid zone -->
+<img src="assets/scan-overlay.svg" alt="" width="100%"/>
+
+<!-- 🟢 Green scanline divider -->
+<img src="assets/scanline.svg" alt="" width="100%"/>
 
 ## How I actually work
 
@@ -90,7 +99,8 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 - **I say when something's a prototype.** AEGIS's own README leads with a warning that it runs on mock data. I'd rather be accurate than impressive.
 - **Iterate in public version numbers.** Veronica is on v7, SMRITI has a documented Phase 1 → Phase 2 upgrade table. Nothing here is a one-shot.
 
-<br/>
+<!-- 🟢 Green scanline divider -->
+<img src="assets/scanline.svg" alt="" width="100%"/>
 
 ## Stack
 
@@ -98,7 +108,8 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 <img src="https://skillicons.dev/icons?i=c,cpp,python,ts,js,react,nextjs,vite,tailwind,fastapi,nodejs,express,docker,linux,git,figma&theme=dark" alt="stack"/>
 </div>
 
-<br/>
+<!-- 🟢 Green scanline divider -->
+<img src="assets/scanline.svg" alt="" width="100%"/>
 
 <div align="center">
 
@@ -110,7 +121,8 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 
 </div>
 
-<br/>
+<!-- 🟢 Green scanline divider -->
+<img src="assets/scanline.svg" alt="" width="100%"/>
 
 ## Currently building
 
@@ -118,7 +130,8 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 - Extending **Veronica's** omni-connector layer
 - Applied to **PRAYAAS** (NCERT's national research grant) with an education-technology proposal
 
-<br/>
+<!-- 🟢 Green scanline divider -->
+<img src="assets/scanline.svg" alt="" width="100%"/>
 
 ## Stats
 
@@ -136,7 +149,11 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 <img src="https://raw.githubusercontent.com/HardikBhaskar2010/HardikBhaskar2010/output/github-contribution-grid-snake-dark.svg" alt="snake"/>
 </div>
 
-<br/>
+<!-- 🟢 HACKER SCAN OVERLAY — Bottom zone -->
+<img src="assets/scan-overlay.svg" alt="" width="100%"/>
+
+<!-- 🟢 Green scanline divider -->
+<img src="assets/scanline.svg" alt="" width="100%"/>
 
 ## Reach out
 
