@@ -125,7 +125,6 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/HardikBhaskar2010/HardikBhaskar2010/output/github-contribution-grid-snake-dark.svg" alt="snake"/>
-<br/><sub>(animates once the snake workflow below runs — see SETUP.md)</sub>
 </div>
 
 <br/>
