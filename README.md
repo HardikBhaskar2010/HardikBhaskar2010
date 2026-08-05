@@ -114,13 +114,15 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 
 ## Stats
 
+<!-- SELF-HOSTED: replace YOUR-STATS-APP and YOUR-STREAK-APP below with your own Vercel deployments — see SETUP.md. The shared public instances (github-readme-stats.vercel.app, streak-stats.demolab.com) are frequently paused/rate-limited and will show broken images. -->
+
 <div align="center">
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=HardikBhaskar2010&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0B1020&title_color=A78BFA&icon_color=06B6D4" alt="stats"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HardikBhaskar2010&layout=compact&theme=tokyonight&hide_border=true&bg_color=0B1020&title_color=A78BFA" alt="top langs"/>
+<img height="165" src="https://YOUR-STATS-APP.vercel.app/api?username=HardikBhaskar2010&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0B1020&title_color=A78BFA&icon_color=06B6D4" alt="stats"/>
+<img height="165" src="https://YOUR-STATS-APP.vercel.app/api/top-langs/?username=HardikBhaskar2010&layout=compact&theme=tokyonight&hide_border=true&bg_color=0B1020&title_color=A78BFA" alt="top langs"/>
 </div>
 
 <div align="center">
-<img src="https://streak-stats.demolab.com?user=HardikBhaskar2010&theme=tokyonight&hide_border=true&background=0B1020&ring=A78BFA&fire=06B6D4" alt="streak"/>
+<img src="https://github-readme-streak-stats-eight.vercel.app?user=HardikBhaskar2010&theme=tokyonight&hide_border=true&background=0B1020&ring=A78BFA&fire=06B6D4" alt="streak"/>
 </div>
 
 <div align="center">
