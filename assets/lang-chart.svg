@@ -5,27 +5,27 @@
     <text x="0" y="55" font-family="'JetBrains Mono',monospace" font-size="13" fill="#E5E7EB">JavaScript</text>
     <rect x="190" y="40" width="380" height="16" rx="4" fill="#1a1a2e"/>
     <rect x="190" y="40" width="0" height="16" rx="4" fill="#F1C40F">
-      <animate attributeName="width" from="0" to="320.4" dur="0.8s" begin="0.00s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+      <animate attributeName="width" from="0" to="324.2" dur="0.8s" begin="0.00s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
     </rect>
-    <text x="582" y="53" font-family="'JetBrains Mono',monospace" font-size="12" fill="#A78BFA">84.3%</text>
+    <text x="582" y="53" font-family="'JetBrains Mono',monospace" font-size="12" fill="#A78BFA">85.3%</text>
     <text x="0" y="89" font-family="'JetBrains Mono',monospace" font-size="13" fill="#E5E7EB">TypeScript</text>
     <rect x="190" y="74" width="380" height="16" rx="4" fill="#1a1a2e"/>
     <rect x="190" y="74" width="0" height="16" rx="4" fill="#3178C6">
-      <animate attributeName="width" from="0" to="36.5" dur="0.8s" begin="0.12s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+      <animate attributeName="width" from="0" to="35.8" dur="0.8s" begin="0.12s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
     </rect>
-    <text x="582" y="87" font-family="'JetBrains Mono',monospace" font-size="12" fill="#A78BFA">9.6%</text>
+    <text x="582" y="87" font-family="'JetBrains Mono',monospace" font-size="12" fill="#A78BFA">9.4%</text>
     <text x="0" y="123" font-family="'JetBrains Mono',monospace" font-size="13" fill="#E5E7EB">Python</text>
     <rect x="190" y="108" width="380" height="16" rx="4" fill="#1a1a2e"/>
     <rect x="190" y="108" width="0" height="16" rx="4" fill="#3776AB">
-      <animate attributeName="width" from="0" to="16.0" dur="0.8s" begin="0.24s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+      <animate attributeName="width" from="0" to="13.8" dur="0.8s" begin="0.24s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
     </rect>
-    <text x="582" y="121" font-family="'JetBrains Mono',monospace" font-size="12" fill="#A78BFA">4.2%</text>
+    <text x="582" y="121" font-family="'JetBrains Mono',monospace" font-size="12" fill="#A78BFA">3.6%</text>
     <text x="0" y="157" font-family="'JetBrains Mono',monospace" font-size="13" fill="#E5E7EB">CSS</text>
     <rect x="190" y="142" width="380" height="16" rx="4" fill="#1a1a2e"/>
     <rect x="190" y="142" width="0" height="16" rx="4" fill="#06B6D4">
       <animate attributeName="width" from="0" to="4.0" dur="0.8s" begin="0.36s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
     </rect>
-    <text x="582" y="155" font-family="'JetBrains Mono',monospace" font-size="12" fill="#A78BFA">0.7%</text>
+    <text x="582" y="155" font-family="'JetBrains Mono',monospace" font-size="12" fill="#A78BFA">0.6%</text>
     <text x="0" y="191" font-family="'JetBrains Mono',monospace" font-size="13" fill="#E5E7EB">C</text>
     <rect x="190" y="176" width="380" height="16" rx="4" fill="#1a1a2e"/>
     <rect x="190" y="176" width="0" height="16" rx="4" fill="#A78BFA">
