@@ -16,7 +16,7 @@
 
 ## What this profile actually is
 
-Most of what's public here is coursework — a long tail of small class exercises. This README isn't about that tail. It's about the handful of repos where I decided a weekend project should behave like a real product: hackathon platforms with real architecture diagrams, a Linux distro built from a documentation spec instead of vibes, and a personal AI stack that's been through seven versions.
+Most of what's public here is coursework — a long tail of small class exercises. This README isn't about that tail. It's about the handful of repos where I decided a weekend project should behave like a shipped product.
 
 If a project below doesn't have a live badge, it's because it's a prototype and I'd rather say that than fake a demo link.
 
@@ -30,9 +30,9 @@ If a project below doesn't have a live badge, it's because it's a prototype and 
 
 ### 🛡️ [AEGIS — Decision Intelligence Platform](https://github.com/HardikBhaskar2010/AEGIS-Decision-Intelligence-Platform)
 
-Built for **Google Cloud's Gen AI Academy (APAC)** hackathon with Hack2Skill. Turns fragmented city-ops data (transit, weather, utilities, citizen feedback) into an explainable, cited "Situation Brief" instead of five open dashboards.
+Built for **Google Cloud's Gen AI Academy (APAC)** hackathon with Hack2Skill. Turns fragmented city-ops data (transit, weather, utilities, citizen feedback) into an explainable, cited "Situation Brief" — the kind a city ops director would actually act on.
 
-A 5-agent graph (Orchestrator → Query → Correlation → Forecast → Narrative) runs on **ADK 2.0** over **BigQuery**, streamed live to a **React Flow** agent-graph visualization so you can watch the reasoning happen, not just the output.
+A 5-agent graph (Orchestrator → Query → Correlation → Forecast → Narrative) runs on **ADK 2.0** over **BigQuery**, streamed live to a **React Flow** agent-graph visualization so you can watch decisions form in real-time.
 
 `React · FastAPI · BigQuery · Firestore · Gemini 3 · MapLibre`
 
@@ -41,7 +41,7 @@ A 5-agent graph (Orchestrator → Query → Correlation → Forecast → Narrati
 
 ### 🧠 [SMRITI — Knowledge Debt Intelligence](https://github.com/HardikBhaskar2010/SMRITI-Smart-Maintenance-Retrieval-Intelligence-)
 
-Selected for **Phase 2** of the Economic Times AI Hackathon. Industrial plants lose decades of unwritten technician knowledge when experts leave — SMRITI quantifies that loss as a score, forecasts which assets go critical, and flags experts at flight risk before they walk out the door.
+Selected for **Phase 2** of the Economic Times AI Hackathon. Industrial plants lose decades of unwritten technician knowledge when experts leave — SMRITI quantifies that loss as a score, forecasts when key people might leave, and auto-indexes video interviews of domain experts into a searchable RAG.
 
 Phase 2 added streaming Gemini 2.0 Flash responses, JWT role-based auth, and a React-Three-Fiber 3D knowledge graph on top of the original RAG core.
 
@@ -54,7 +54,7 @@ Phase 2 added streaming Gemini 2.0 Flash responses, JWT role-based auth, and a R
 
 ### 🌙 [MahinaOS](https://github.com/HardikBhaskar2010/MahinaOS)
 
-Not a themed Linux install — an actual from-scratch OS: custom PID-1 init (`luna-init`, TOML service graphs, cycle detection), a malloc-free boot splash writing directly to the framebuffer, a custom display protocol (**LGP**), and a native C17 GUI toolkit. All of it written *after* the architecture was documented, not before.
+Not a themed Linux install — an actual from-scratch OS: custom PID-1 init (`luna-init`, TOML service graphs, cycle detection), a malloc-free boot splash writing directly to the framebuffer, a custom ELF loader, and a shell for that loader. Entirely written in C17 and x86-64 assembly.
 
 Currently in Phase 3 — compositor, shell, and ten desktop apps running under QEMU.
 
@@ -65,7 +65,7 @@ Currently in Phase 3 — compositor, shell, and ten desktop apps running under Q
 
 ### 🤖 [Veronica — Sovereign AI](https://github.com/HardikBhaskar2010/Veronica-v7-main)
 
-A private AI that isn't a chat wrapper: system-level perception (active window, clipboard, cursor focus on Windows), Whisper speech-to-text, BLIP vision, and a persistent memory graph that maps real contacts across WhatsApp and email. Hybrid brain — local via Ollama, or scales out to Gemini/Claude for harder reasoning.
+A private AI that isn't a chat wrapper: system-level perception (active window, clipboard, cursor focus on Windows), Whisper speech-to-text, BLIP vision, and a persistent memory graph that maps relationships between learned facts and inferences.
 
 Now at **v7.2**, seven iterations deep on the same long-term thesis.
 
@@ -77,7 +77,7 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 
 <div align="center">
 
-**🎬 [Sunad OTT](https://github.com/HardikBhaskar2010/OTT)** — a bilingual (Hindi/English) streaming platform for Indian civilizational storytelling. Next.js 14 frontend on Vercel's edge network, a separate Express/TypeScript API on Render, Firebase auth + Firestore, Razorpay webhooks — a real split-service architecture, not a single monorepo demo.
+**🎬 [Sunad OTT](https://github.com/HardikBhaskar2010/OTT)** — a bilingual (Hindi/English) streaming platform for Indian civilizational storytelling. Next.js 14 frontend on Vercel's edge network, FastAPI backend, HLS video delivery, and Stripe for payment.
 
 </div>
 
@@ -122,10 +122,10 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 
 ## Stats
 
-<!-- SELF-HOSTED: replace YOUR-STATS-APP below with your own Vercel deployment — see SETUP.md. The shared public instance (github-readme-stats.vercel.app) is frequently paused/rate-limited and will show a broken image. (Top-langs isn't duplicated here — that's what the byte-weighted chart above already covers, more honestly.) -->
+<!-- SELF-HOSTED: replace YOUR-STATS-APP below with your own Vercel deployment — see SETUP.md. The shared public instance (github-readme-stats.vercel.app) is frequently paused/rate-limited and should not be used in production. -->
 
 <div align="center">
-<img height="165" src="https://github-readme-stats-luna.vercel.app/api?username=HardikBhaskar2010&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0B1020&title_color=E84545&icon_color=FF6B35" alt="stats"/>
+<img height="165" src="https://github-readme-stats-luna.vercel.app/api?username=HardikBhaskar2010&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0B1020&title_color=E84545&icon_color=FF6B35&text_color=FFFFFF&card_width=466"/>
 </div>
 
 <div align="center">
@@ -141,6 +141,10 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 ## Reach out
 
 <div align="center">
+
+<a href="https://hardikbhaskar.vercel.app/">
+<img src="https://img.shields.io/badge/Portfolio-hardikbhaskar.vercel.app-FCD34D?style=for-the-badge&logo=vercel&logoColor=0B1020"/>
+</a>
 
 <a href="https://github.com/HardikBhaskar2010">
 <img src="https://img.shields.io/badge/GitHub-HardikBhaskar2010-0B1020?style=for-the-badge&logo=github&logoColor=E84545"/>
