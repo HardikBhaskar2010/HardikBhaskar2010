@@ -2,7 +2,9 @@
 
 <!-- Self-hosted, self-owned animated banner — SMIL animation baked into the SVG itself.
      No third-party rendering service, so it can never 503 on you like the widgets below can. -->
-<img src="assets/header.svg" alt="header" width="100%"/>
+<img src="assets/header.svg" 
+     alt="Hardik Bhaskar — Systems Architect and AI Systems Builder"
+     width="100%"/>
 
 <br/>
 
@@ -38,9 +40,9 @@ If a project below doesn't have a live badge, it's because it's a prototype. I'd
 
 ### 🛡️ [AEGIS — Decision Intelligence Platform](https://github.com/HardikBhaskar2010/AEGIS-Decision-Intelligence-Platform)
 
-**AEGIS by Hardik Bhaskar** — a decision intelligence platform built for **Google Cloud's Gen AI Academy (APAC)** hackathon with Hack2Skill. Turns fragmented city-ops data (transit, weather, utilities, citizen feedback) into an explainable, cited "Situation Brief."
+**AEGIS by Hardik Bhaskar** — a decision intelligence platform built for **Google Cloud's Gen AI Academy (APAC)** hackathon with Hack2Skill. Turns fragmented city-ops data (transit, weather, uti[...]
 
-A 5-agent graph (Orchestrator → Query → Correlation → Forecast → Narrative) runs on **ADK 2.0** over **BigQuery**, streamed live to a **React Flow** agent-graph visualization so you can watch the reasoning unfold.
+A 5-agent graph (Orchestrator → Query → Correlation → Forecast → Narrative) runs on **ADK 2.0** over **BigQuery**, streamed live to a **React Flow** agent-graph visualization so you can wa[...]
 
 `React · FastAPI · BigQuery · Firestore · Gemini 3 · MapLibre`
 
@@ -49,7 +51,7 @@ A 5-agent graph (Orchestrator → Query → Correlation → Forecast → Narrati
 
 ### 🧠 [SMRITI — Knowledge Debt Intelligence](https://github.com/HardikBhaskar2010/SMRITI-Smart-Maintenance-Retrieval-Intelligence-)
 
-**SMRITI by Hardik Bhaskar** — a knowledge intelligence platform selected for **Phase 2** of the Economic Times AI Hackathon. Industrial plants lose decades of unwritten technician knowledge when experts leave — SMRITI quantifies that loss as a score, forecasts knowledge fade, and surfaces what's worth digitizing first.
+**SMRITI by Hardik Bhaskar** — a knowledge intelligence platform selected for **Phase 2** of the Economic Times AI Hackathon. Industrial plants lose decades of unwritten technician knowledge whe[...]
 
 Phase 2 added streaming Gemini 2.0 Flash responses, JWT role-based auth, and a React-Three-Fiber 3D knowledge graph on top of the original RAG core.
 
@@ -62,7 +64,7 @@ Phase 2 added streaming Gemini 2.0 Flash responses, JWT role-based auth, and a R
 
 ### 🌙 [MahinaOS](https://github.com/HardikBhaskar2010/MahinaOS)
 
-**MahinaOS by Hardik Bhaskar** — a from-scratch operating system: custom PID-1 init (`luna-init`, TOML service graphs, cycle detection), a malloc-free boot splash writing directly to the framebuffer, a custom shell with job control and history, and a tiling compositor.
+**MahinaOS by Hardik Bhaskar** — a from-scratch operating system: custom PID-1 init (`luna-init`, TOML service graphs, cycle detection), a malloc-free boot splash writing directly to the framebu[...]
 
 Currently in Phase 3 — compositor, shell, and ten desktop apps running under QEMU.
 
@@ -73,7 +75,7 @@ Currently in Phase 3 — compositor, shell, and ten desktop apps running under Q
 
 ### 🤖 [Veronica — Sovereign AI](https://github.com/HardikBhaskar2010/Veronica-v7-main)
 
-**Veronica by Hardik Bhaskar** — a private AI that isn't a chat wrapper: system-level perception (active window, clipboard, cursor focus on Windows), Whisper speech-to-text, BLIP vision, and a persistent memory graph that maps relationships between everything you've shown it.
+**Veronica by Hardik Bhaskar** — a private AI that isn't a chat wrapper: system-level perception (active window, clipboard, cursor focus on Windows), Whisper speech-to-text, BLIP vision, and a p[...]
 
 Now at **v7.2**, seven iterations deep on the same long-term thesis.
 
@@ -85,7 +87,7 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 
 <div align="center">
 
-**🎬 [Sunad OTT](https://github.com/HardikBhaskar2010/OTT)** — a bilingual (Hindi/English) streaming platform for Indian civilizational storytelling. Next.js 14 frontend on Vercel's edge network, Hono backend on Cloudflare Workers, and a custom video codec selection UI.
+**🎬 [Sunad OTT](https://github.com/HardikBhaskar2010/OTT)** — a bilingual (Hindi/English) streaming platform for Indian civilizational storytelling. Next.js 14 frontend on Vercel's edge netwo[...]
 
 </div>
 
@@ -93,7 +95,7 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 
 ## How I actually work
 
-- **Documentation before code.** MahinaOS has a six-volume internal spec (the "Divine Collection of Knowledge") that the code has to satisfy — if it's not written down first, it doesn't get built.
+- **Documentation before code.** MahinaOS has a six-volume internal spec (the "Divine Collection of Knowledge") that the code has to satisfy — if it's not written down first, it doesn't get buil[...]
 - **Architecture diagrams aren't decoration.** AEGIS ships with real Mermaid sequence diagrams and an ERD because I use them to think, not just to explain afterward.
 - **I say when something's a prototype.** AEGIS's own README leads with a warning that it runs on mock data. I'd rather be accurate than impressive.
 - **Iterate in public version numbers.** Veronica is on v7, SMRITI has a documented Phase 1 → Phase 2 upgrade table. Nothing here is a one-shot.
@@ -130,18 +132,18 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 
 ## Stats
 
-<!-- SELF-HOSTED: replace YOUR-STATS-APP below with your own Vercel deployment — see SETUP.md. The shared public instance (github-readme-stats.vercel.app) is frequently paused/rate-limited and will give you 404s; run it yourself. -->
+<!-- SELF-HOSTED: replace YOUR-STATS-APP below with your own Vercel deployment — see SETUP.md. The shared public instance (github-readme-stats.vercel.app) is frequently paused/rate-limited and [...]
 
 <div align="center">
-<img height="165" src="https://github-readme-stats-luna.vercel.app/api?username=HardikBhaskar2010&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0B1020&title_color=FCD34D&text_color=D4D4D8"/>
+<img height="165" src="https://github-readme-stats-luna.vercel.app/api?username=HardikBhaskar2010&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0B1020&title_color=[...]
 </div>
 
 <div align="center">
-<img src="https://github-readme-streak-stats-eight.vercel.app?user=HardikBhaskar2010&theme=tokyonight&hide_border=true&background=0B1020&ring=E84545&fire=FF6B35" alt="streak"/>
+<img src="https://github-readme-streak-stats-eight.vercel.app?user=HardikBhaskar2010&theme=tokyonight&hide_border=true&background=0B1020&ring=E84545&fire=FF6B35" alt="GitHub contribution streak"/>
 </div>
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/HardikBhaskar2010/HardikBhaskar2010/output/github-contribution-grid-snake-dark.svg" alt="snake"/>
+<img src="https://raw.githubusercontent.com/HardikBhaskar2010/HardikBhaskar2010/output/github-contribution-grid-snake-dark.svg" alt="GitHub contribution graph"/>
 </div>
 
 <br/>
@@ -156,6 +158,14 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 
 <a href="https://github.com/HardikBhaskar2010">
 <img src="https://img.shields.io/badge/GitHub-HardikBhaskar2010-0B1020?style=for-the-badge&logo=github&logoColor=E84545"/>
+</a>
+
+<a href="https://www.linkedin.com/in/hardik-bhaskar-8a107a3bb/">
+<img src="https://img.shields.io/badge/LinkedIn-Hardik%20Bhaskar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="https://x.com/kitsune_luna05">
+<img src="https://img.shields.io/badge/X-@kitsune_luna05-000000?style=for-the-badge&logo=x&logoColor=white"/>
 </a>
 
 </div>
