@@ -6,6 +6,12 @@
 
 <br/>
 
+**HARDIK BHASKAR** · SYSTEMS ARCHITECT · AI SYSTEMS BUILDER
+
+`operating systems` · `autonomous AI` · `intelligent systems`
+
+<br/>
+
 <img src="https://img.shields.io/badge/focus-AI_agents_·_systems_·_web-E84545?style=for-the-badge&labelColor=0B1020"/>
 <img src="https://img.shields.io/badge/mode-dark_only-FF6B35?style=for-the-badge&labelColor=0B1020"/>
 <img src="https://img.shields.io/badge/philosophy-docs_before_code-FCD34D?style=for-the-badge&labelColor=0B1020"/>
@@ -16,9 +22,11 @@
 
 ## What this profile actually is
 
-Most of what's public here is coursework — a long tail of small class exercises. This README isn't about that tail. It's about the handful of repos where I decided a weekend project should behave like a shipped product.
+This is the engineering portfolio of **Hardik Bhaskar**, focused on systems architecture, operating systems, AI agents, and intelligent software systems.
 
-If a project below doesn't have a live badge, it's because it's a prototype and I'd rather say that than fake a demo link.
+Most of what's public here is coursework — a long tail of small class exercises. The projects below are the handful where I decided a weekend project should behave like a shipped product.
+
+If a project below doesn't have a live badge, it's because it's a prototype. I'd rather say that than fake a demo link.
 
 <br/>
 
@@ -30,9 +38,9 @@ If a project below doesn't have a live badge, it's because it's a prototype and 
 
 ### 🛡️ [AEGIS — Decision Intelligence Platform](https://github.com/HardikBhaskar2010/AEGIS-Decision-Intelligence-Platform)
 
-Built for **Google Cloud's Gen AI Academy (APAC)** hackathon with Hack2Skill. Turns fragmented city-ops data (transit, weather, utilities, citizen feedback) into an explainable, cited "Situation Brief" — the kind a city ops director would actually act on.
+**AEGIS by Hardik Bhaskar** — a decision intelligence platform built for **Google Cloud's Gen AI Academy (APAC)** hackathon with Hack2Skill. Turns fragmented city-ops data (transit, weather, utilities, citizen feedback) into an explainable, cited "Situation Brief."
 
-A 5-agent graph (Orchestrator → Query → Correlation → Forecast → Narrative) runs on **ADK 2.0** over **BigQuery**, streamed live to a **React Flow** agent-graph visualization so you can watch decisions form in real-time.
+A 5-agent graph (Orchestrator → Query → Correlation → Forecast → Narrative) runs on **ADK 2.0** over **BigQuery**, streamed live to a **React Flow** agent-graph visualization so you can watch the reasoning unfold.
 
 `React · FastAPI · BigQuery · Firestore · Gemini 3 · MapLibre`
 
@@ -41,7 +49,7 @@ A 5-agent graph (Orchestrator → Query → Correlation → Forecast → Narrati
 
 ### 🧠 [SMRITI — Knowledge Debt Intelligence](https://github.com/HardikBhaskar2010/SMRITI-Smart-Maintenance-Retrieval-Intelligence-)
 
-Selected for **Phase 2** of the Economic Times AI Hackathon. Industrial plants lose decades of unwritten technician knowledge when experts leave — SMRITI quantifies that loss as a score, forecasts when key people might leave, and auto-indexes video interviews of domain experts into a searchable RAG.
+**SMRITI by Hardik Bhaskar** — a knowledge intelligence platform selected for **Phase 2** of the Economic Times AI Hackathon. Industrial plants lose decades of unwritten technician knowledge when experts leave — SMRITI quantifies that loss as a score, forecasts knowledge fade, and surfaces what's worth digitizing first.
 
 Phase 2 added streaming Gemini 2.0 Flash responses, JWT role-based auth, and a React-Three-Fiber 3D knowledge graph on top of the original RAG core.
 
@@ -54,7 +62,7 @@ Phase 2 added streaming Gemini 2.0 Flash responses, JWT role-based auth, and a R
 
 ### 🌙 [MahinaOS](https://github.com/HardikBhaskar2010/MahinaOS)
 
-Not a themed Linux install — an actual from-scratch OS: custom PID-1 init (`luna-init`, TOML service graphs, cycle detection), a malloc-free boot splash writing directly to the framebuffer, a custom ELF loader, and a shell for that loader. Entirely written in C17 and x86-64 assembly.
+**MahinaOS by Hardik Bhaskar** — a from-scratch operating system: custom PID-1 init (`luna-init`, TOML service graphs, cycle detection), a malloc-free boot splash writing directly to the framebuffer, a custom shell with job control and history, and a tiling compositor.
 
 Currently in Phase 3 — compositor, shell, and ten desktop apps running under QEMU.
 
@@ -65,7 +73,7 @@ Currently in Phase 3 — compositor, shell, and ten desktop apps running under Q
 
 ### 🤖 [Veronica — Sovereign AI](https://github.com/HardikBhaskar2010/Veronica-v7-main)
 
-A private AI that isn't a chat wrapper: system-level perception (active window, clipboard, cursor focus on Windows), Whisper speech-to-text, BLIP vision, and a persistent memory graph that maps relationships between learned facts and inferences.
+**Veronica by Hardik Bhaskar** — a private AI that isn't a chat wrapper: system-level perception (active window, clipboard, cursor focus on Windows), Whisper speech-to-text, BLIP vision, and a persistent memory graph that maps relationships between everything you've shown it.
 
 Now at **v7.2**, seven iterations deep on the same long-term thesis.
 
@@ -77,7 +85,7 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 
 <div align="center">
 
-**🎬 [Sunad OTT](https://github.com/HardikBhaskar2010/OTT)** — a bilingual (Hindi/English) streaming platform for Indian civilizational storytelling. Next.js 14 frontend on Vercel's edge network, FastAPI backend, HLS video delivery, and Stripe for payment.
+**🎬 [Sunad OTT](https://github.com/HardikBhaskar2010/OTT)** — a bilingual (Hindi/English) streaming platform for Indian civilizational storytelling. Next.js 14 frontend on Vercel's edge network, Hono backend on Cloudflare Workers, and a custom video codec selection UI.
 
 </div>
 
@@ -122,10 +130,10 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 
 ## Stats
 
-<!-- SELF-HOSTED: replace YOUR-STATS-APP below with your own Vercel deployment — see SETUP.md. The shared public instance (github-readme-stats.vercel.app) is frequently paused/rate-limited and should not be used in production. -->
+<!-- SELF-HOSTED: replace YOUR-STATS-APP below with your own Vercel deployment — see SETUP.md. The shared public instance (github-readme-stats.vercel.app) is frequently paused/rate-limited and will give you 404s; run it yourself. -->
 
 <div align="center">
-<img height="165" src="https://github-readme-stats-luna.vercel.app/api?username=HardikBhaskar2010&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0B1020&title_color=E84545&icon_color=FF6B35&text_color=FFFFFF&card_width=466"/>
+<img height="165" src="https://github-readme-stats-luna.vercel.app/api?username=HardikBhaskar2010&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0B1020&title_color=FCD34D&text_color=D4D4D8"/>
 </div>
 
 <div align="center">
