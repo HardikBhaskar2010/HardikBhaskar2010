@@ -132,10 +132,8 @@ Now at **v7.2**, seven iterations deep on the same long-term thesis.
 
 ## Stats
 
-<!-- SELF-HOSTED: replace YOUR-STATS-APP below with your own Vercel deployment — see SETUP.md. The shared public instance (github-readme-stats.vercel.app) is frequently paused/rate-limited and [...]
-
 <div align="center">
-<img height="165" src="https://github-readme-stats-luna.vercel.app/api?username=HardikBhaskar2010&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0B1020&title_color=[...]
+<img height="165" src="https://github-readme-stats-luna.vercel.app/api?username=HardikBhaskar2010&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0B1020&title_color=FCD34D&icon_color=E84545" alt="GitHub stats"/>
 </div>
 
 <div align="center">
